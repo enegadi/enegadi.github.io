@@ -81,6 +81,12 @@ body {
   width: 100%;
   grid-area: card;
 }
+.hero-card:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+
 
 .card-footer {
   background-color: #3b3b3b;
@@ -190,6 +196,7 @@ body {
   line-height: 160%;
   text-transform: capitalize;
   margin: 0.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .collections {
@@ -464,6 +471,16 @@ body {
   grid-area: card1;
 }
 
+.more-nft-card1:hover,
+.more-nft-card2:hover,
+.more-nft-card3:hover,
+.collection-one:hover,
+.collection-two:hover,
+.collection-three:hover {
+  transition: 0.8s;
+  transform: scale(1.1);
+}
+
 .more-nft-card2 {
   background-image: url(../images/card2.jpg);
   /* background-position: 0 -5rem; */
@@ -476,7 +493,7 @@ body {
 }
 
 /*! tablet*/
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
   .nav-bar-items {
     display: none;
   }
@@ -674,8 +691,8 @@ body {
   .more-nft {
     margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 1rem;
     grid-template-areas:
       "header header"
@@ -684,7 +701,25 @@ body {
       "button button";
   }
 
-  .header1{
-    height: 200px;
+  .more-nft-card1,
+  .more-nft-card2 {
+    height: 100vw;
+  }
+  .card-footer {
+    height: 22vw;
+  }
+
+  .card-footer > h3 {
+    font-size: 6vw;
+  }
+
+  .more-nft-pricing > div > h6,
+  .more-nft-pricing > div > p,
+  .nav-button {
+    font-size: 3vw;
+  }
+
+  .nav-button {
+    margin: 0;
   }
 }
