@@ -90,12 +90,18 @@ body {
 
 .card-footer > h3 {
   margin: 0;
+  font-family: "Work Sans", sans-serif;
 }
 
 .user-details {
   align-items: center;
   display: flex;
   flex-direction: row;
+  font-family: "Sans Work", sans-serif;
+}
+
+.user-details > p {
+  font-family: inherit;
 }
 .user-details > img {
   border-radius: 0.75rem;
@@ -359,8 +365,118 @@ body {
   margin-bottom: 1rem;
 }
 
+/*! More NFTs*/
+.more-nft {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+  grid-template-areas:
+    "header header header header button button"
+    "card1  card1  card2  card2  card3  card3"
+    "card1  card1  card2  card2  card3  card3";
+}
+
+.more-nft-header {
+  grid-area: header;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.more-nft-header > div > h6 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  margin: 0;
+}
+
+.more-nft-header > div > p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+}
+.header1 {
+  grid-area: header;
+  /* grid-column: 1 / 5;
+  grid-row: 1 / 2; */
+}
+
+.more-nft-button {
+  grid-area: button;
+  /* grid-column: 5 / 7;
+  grid-row: 1 / 2; */
+}
+
+.more-nft-img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.more-nft-pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more-nft-pricing > div > p,
+.more-nft-pricing > div > h6 {
+  margin: 2px;
+}
+
+.more-nft-pricing > div > p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #858584;
+}
+
+.more-nft-pricing > div > h6 {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 400;
+  font-size: 1.7vw;
+  line-height: 140%;
+}
+
+.more-nft-card1,
+.more-nft-card2,
+.more-nft-card3 {
+  border-radius: 25px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 33vw;
+  width: 25vw;
+}
+
+.more-nft-card1 {
+  /* background-position: 0 10vw; */
+  background-image: url(../images/card1.jpg);
+  grid-area: card1;
+}
+
+.more-nft-card2 {
+  background-image: url(../images/card2.jpg);
+  /* background-position: 0 -5rem; */
+  grid-area: card2;
+}
+.more-nft-card3 {
+  background-image: url(../images/card3.jpg);
+  /* background-position: 0 -1rem; */
+  grid-area: card3;
+}
+
 /*! tablet*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  {
   .nav-bar-items {
     display: none;
   }
@@ -409,6 +525,7 @@ body {
   .top-creators-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   /* .creator-sales > p,
@@ -424,9 +541,55 @@ body {
   .btn2 {
     display: none;
   }
+
+  /*? More NFTS*/
+  .more-nft {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas:
+      "header header  header button"
+      "card1  card1   card2  card2"
+      "card1  card1   card2  card2";
+  }
+
+  .more-nft {
+    margin: 0;
+  }
+
+  .more-nft-button {
+    padding: 1vw 2vw;
+    font-size: 1px;
+  }
+
+  .more-nft-card1,
+  .more-nft-card2 {
+    height: 50vw;
+    width: 100%;
+  }
+  .more-nft-card3 {
+    display: none;
+  }
+
+  .card-footer > h3 {
+    font-size: 4vw;
+  }
+
+  .nav-button {
+    font-size: 2vw;
+  }
+  .card-footer {
+    height: 15vw;
+  }
+
+  .user-details > p {
+    margin: 1.5vw;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .menu,
   .btn2 {
     display: none;
@@ -506,5 +669,22 @@ body {
   .btn2 {
     display: flex;
     margin: 0;
+  }
+  /*? More nfts*/
+  .more-nft {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    gap: 1rem;
+    grid-template-areas:
+      "header header"
+      "card1  card1"
+      "card2  card2"
+      "button button";
+  }
+
+  .header1{
+    height: 200px;
   }
 }
