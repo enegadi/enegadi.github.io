@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="create-account.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/459bb3a8ea.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Create Account</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="index.html">
+        <div class="logo-title">
+          <img class="logo" src="images/store.png" alt="store images" />
+          <p class="title">NFT Marketplace</p>
+        </div>
+      </a>
+      <img class="menu" src="images/menu.png" alt="menu image" />
+      <div class="nav-bar-items">
+        <p class="nav-item">Marketplace</p>
+        <p class="nav-item">Rankings</p>
+        <p class="nav-item">Connect a wallet</p>
+        <a href="create-account.html">
+          <p class="nav-item button nav-button">Sing Up</p>
+        </a>
+      </div>
+    </div>
+
+    <form class="create-account" action="">
+      <img src="images/hero.jpg" alt="" />
+      <div class="details">
+        <p class="h1">Create account</p>
+        <p class="h3">
+          Welcome! enter your details and start creating, collecting and selling
+          NFTs.
+        </p>
+        <div class="create-account-input">
+          <i class="fa-regular fa-user x1"></i>
+          <input class="input" type="text" placeholder="Username" required />
+        </div>
+        <div class="create-account-input">
+          <i class="fa-regular fa-envelope x1"></i>
+          <input class="input" type="email" placeholder="Email Address" required/>
+        </div>
+        <div class="create-account-input">
+          <i class="fa-solid fa-lock x1"></i>
+          <input class="input" type="password" placeholder="Password" required/>
+        </div>
+        <div class="create-account-input">
+          <i class="fa-solid fa-lock x1"></i>
+          <input class="input" type="password" placeholder="Confirm Password" required/>
+        </div>
+
+        <input
+          class="input input-corrector create-button"
+          type="submit"
+          value="Create Account"
+        />
+      </div>
+    </form>
+
+    <!--! footer-->
+    <section class="footer-section">
+      <div class="footer">
+        <div class="footer-part1">
+          <div class="logo-title">
+            <img class="logo" src="images/store.png" alt="store images" />
+            <p class="footer-titles">NFT Marketplace</p>
+          </div>
+          <p class="footer-p">
+            NFT marketplace UI created with Anima for Figma.
+          </p>
+          <p class="footer-p">Join our community</p>
+          <!-- <div class="social-media">
+          <i class="fa-brands fa-youtube x2"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div> -->
+        </div>
+        <div class="footer-part2">
+          <p class="footer-titles">Explore</p>
+          <p class="footer-p">Marketplace</p>
+          <p class="footer-p">Rankings</p>
+          <p class="footer-p">Connect a wallet</p>
+        </div>
+        <div class="footer-part3">
+          <p class="footer-titles">Join our weekly digest</p>
+          <p class="footer-p">
+            Get exclusive promotions & updates straight to your inbox.
+          </p>
+          <form class="weekly-button">
+            <!-- <fieldset></fieldset> -->
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter your email here"
+            />
+            <p class="button">
+              <i class="fa-regular fa-envelope x2"></i>
+              Subscribe
+            </p>
+          </form>
+        </div>
+      </div>
+      <p class="footer-p">&copy; NFT Market. Use this template freely.</p>
+    </section>
+  </body>
+</html>

@@ -24,6 +24,10 @@
   /* --button-margin: 1vw auto; */
 }
 
+.x1 {
+  font-size: 2vw;
+}
+
 body {
   background-color: #2b2b2b;
   color: white;
@@ -128,6 +132,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: var(--button-border);
+}
+
+a:visited > .nav-button,
+a:visited .title {
+  color: white;
 }
 .logo-title {
   display: flex;
@@ -258,7 +267,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 3rem;
+  margin: 0;
 }
 
 /* .stat-item > p {
@@ -564,7 +573,7 @@ body {
 .more-nft-button {
   grid-area: button;
   height: var(--button-height);
-  padding: var(--button-padding);
+  padding: 1.5vw 5vw;
 
   /* grid-column: 5 / 7;
   grid-row: 1 / 2; */
@@ -683,7 +692,7 @@ body {
   margin: 0;
 }
 
-.input {
+/* .input {
   height: 5vw;
   width: 100%;
   padding: 0 0px 0px 1vw;
@@ -692,17 +701,51 @@ body {
   outline: 0px;
   font-size: 1.5vw;
   float: left;
-  font-family: var(--work-sans);  
+  font-family: var(--work-sans);
+  border: 0;
+} */
+
+.input {
+  border-radius: none;
+  background-color: transparent;
+  border: 0px;
 }
 .weekly-button {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  height: 5vw;
+  width: 100%;
+  padding: 0 0px 0px 1vw;
+  margin: 1vw 0;
+  border-radius: var(--button-border);
+  outline: 0px;
+  font-size: 1.5vw;
+  float: left;
+  font-family: var(--work-sans);
+  border: 0;
+  background-color: white;
 }
+
 .weekly-button > p > img {
   height: 5vw;
 }
 
+.weekly-button > p {
+  font-size: 1.5vw;
+  font-family: var(--work-sans);
+  border-radius: var(--button-border);
+  height: 5vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly-button > p > i {
+  margin-right: 1vw;
+}
 /*! Footer */
 
 .footer-section {
@@ -735,7 +778,7 @@ body {
   font-weight: 700;
   font-size: 2.2vw;
   line-height: 160%;
-  margin: 0;
+  margin: 2vw 0;
   /* height: 5vw; */
 }
 
@@ -1054,7 +1097,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    gap: 1rem;
+    gap: 8vw;
     grid-template-areas:
       "header header"
       "card1  card1"
@@ -1066,6 +1109,8 @@ body {
   .more-nft-card2 {
     height: 90vw;
     border-radius: 5vw;
+    justify-self: center;
+
   }
   .card-footer {
     height: 26vw;
@@ -1127,9 +1172,10 @@ body {
 
   .empty-button {
     font-size: 4vw;
-    padding: 5vw;
+    padding: 7vw;
     margin: 0;
     border-radius: 5vw;
+    border: 0.7vw solid var(--button-color);
     font-family: var(--work-sans);
     font-weight: var(--button-font-weight);
     /* margin: 5vw auto;
@@ -1159,20 +1205,24 @@ body {
   }
 
   .weekly-digest > img {
-    width: 75vw;
-    height: 50vw;
-  }
-
-  .input {
-    height: 12vw;
     width: 100%;
-    padding: 0 0px 0px 3vw;
+    height: 50vw;
+    margin-bottom: 2vw;
+  }
+  .weekly-digest > div{
+    margin-left: 0;
+  }
+  .input {
+    height: 11vw;
+    width: auto;
+    padding: 0 0px 0px 6vw;
     margin: 1vw 0;
-    border-radius: 3vw;
-    outline: 0px;
-    font-size: 4vw;
+    border-radius: 7vw;
+    outline: none;
+    font-size: 3.6vw;
     font-family: var(--work-sans);
     float: left;
+    background-color: white;
   }
 
   .footer-titles {
@@ -1182,13 +1232,36 @@ body {
   .footer-part1,
   .footer-part2,
   .footer-part3 {
-  width: 100%;}
+    width: 100%;
+  }
 
-  .footer-p{
-    font-size:4vw;
+  .footer-p {
+    font-size: 3.6vw;
   }
 
   .weekly-button > p > img {
     height: 10vw;
-}
+  }
+
+  .x1 {
+    font-size: 4vw;
+  }
+  .weekly-button{
+    flex-direction: column;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .weekly-button > p{
+    height: 11vw;
+    font-size: 3.7vw;
+    border-radius: 7vw;
+    width: auto;
+    font-family: var(--work-sans);
+    padding: 0;
+  }
+  .statistics{
+    margin-right: 3rem 0;
+  }
+  
 }
