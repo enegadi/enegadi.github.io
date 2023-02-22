@@ -1,0 +1,45 @@
+.connect-wallet-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 2vw 0px 4vw;
+  gap: 2vw;
+  width: 32vw;
+  height: 7.2vw;
+  background: #3b3b3b;
+  border: 0.2vw solid #a259ff;
+  border-radius: 2vw;
+}
+
+.connect-wallet-input > img {
+  width: 4vw;
+  height: 4vw;
+}
+.connect-wallet-input > p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2vw;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .connect-wallet-input {
+    box-sizing: border-box;
+    padding: 0px 5vw 0px 10vw;
+    gap: 5vw;
+
+    width: 80vw;
+    height: 15vw;
+    border-radius: 10vw;
+  }
+
+  .connect-wallet-input > img {
+    width: 8vw;
+    height: 8vw;
+  }
+  .connect-wallet-input > p {
+    font-size: 5.5vw;
+  }
+}

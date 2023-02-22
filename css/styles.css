@@ -90,9 +90,11 @@ body {
   padding-right: 2vw;
 }
 /*! nav-bar styles*/
-.title {
+.nav-bar > a {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-bar {
@@ -115,6 +117,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.nav-bar-items > a {
+  text-decoration: none;
+  color: white;
 }
 .nav-item {
   justify-self: center;
@@ -709,6 +716,8 @@ a:visited .title {
   border-radius: none;
   background-color: transparent;
   border: 0px;
+  outline: none;
+  width: 100%;
 }
 .weekly-button {
   display: flex;
